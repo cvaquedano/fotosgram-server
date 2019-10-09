@@ -4,7 +4,7 @@ const postSchema = new Schema({
     created: {
         type: Date
     },
-    img: [{
+    imgs: [{
         type: String
     }],
     coords: {

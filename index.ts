@@ -16,7 +16,7 @@ server.app.use( bodyParser.urlencoded({
 server.app.use( bodyParser.json());
 
 // file upload
-server.app.use( fileUpload());
+server.app.use( fileUpload({useTempFile: true}));
 
 // rutas de mi app
 server.app.use( '/user', userRoutes )
